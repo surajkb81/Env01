@@ -42,3 +42,5 @@ jobs:
         run: |        
           echo "Mongo user name : ${{ env.MONGODB_USERNAME }}"
           echo "Mongo user name : $MONGODB_DB_NAME"
+          echo "pass : ${{ env.MONGODB_PASSWORD }}"
+          echo "pass 3 : $${{ secrets.mongo_cluster_db_pass }}"
